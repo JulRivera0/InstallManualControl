@@ -5,7 +5,7 @@
 
 cd ~/catkin_ws
 sudo apt-get install arduino
-sudo apt-get install ros-indigo-joy -y
+sudo apt-get install ros-indigo-joy
 cd src
 git clone https://github.com/JulRivera0/jetsoncar_teleop.git
 cd ..
@@ -15,7 +15,7 @@ catkin_make
 cd ~/InstallManualControl
 #cp -r Arduino\ Firmware/* '/home/ubuntu/sketchbook'
 cp -r Arduino\ Firmware/* '/home/julrivera/sketchbook'
-sudo apt-get install ros-indigo-rosserial-arduino ros-indigo-rosserial ros-indigo-angles -y
+sudo apt-get install ros-indigo-rosserial-arduino ros-indigo-rosserial ros-indigo-angles
 cd ~/sketchbook/libraries
 rm -rf ros_lib
 source ~/catkin_ws/devel/setup.bash
